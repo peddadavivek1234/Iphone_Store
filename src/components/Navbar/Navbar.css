@@ -1,0 +1,137 @@
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(15px);
+  border-bottom: 1px solid #eeeeee;
+}
+
+.navbar-container {
+  max-width: 1250px;
+  height: 75px;
+  margin: auto;
+  padding: 0 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  color: #171717;
+  font-size: 25px;
+  font-weight: 750;
+  text-decoration: none;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.navbar-links a {
+  color: #555;
+  font-size: 13px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.navbar-links a:hover {
+  color: #000;
+}
+
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.nav-cart-link {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #171717;
+  text-decoration: none;
+}
+
+.cart-count {
+  position: absolute;
+  top: -9px;
+  right: -11px;
+  min-width: 19px;
+  height: 19px;
+  padding: 0 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  background: #e53935;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.mobile-menu-button {
+  display: none;
+  padding: 5px;
+  border: none;
+  background: transparent;
+  color: #171717;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .navbar-container {
+    height: 68px;
+    padding: 0 18px;
+  }
+
+  .navbar-logo {
+    font-size: 22px;
+  }
+
+  .navbar-links {
+    position: absolute;
+    top: 68px;
+    left: 0;
+    right: 0;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+    padding: 12px 22px 20px;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+
+  .navbar-links a {
+    width: 100%;
+    padding: 14px 0;
+    border-bottom: 1px solid #f1f1f1;
+    font-size: 14px;
+  }
+
+  .navbar-actions {
+    gap: 20px;
+  }
+
+  .mobile-menu-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
