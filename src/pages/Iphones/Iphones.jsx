@@ -1,4 +1,3 @@
-
 import React, { useMemo, useState } from "react";
 import { Search, SlidersHorizontal, X } from "lucide-react";
 import { motion } from "framer-motion";

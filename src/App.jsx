@@ -12,6 +12,7 @@ import Checkout from "./pages/Checkout/Checkout";
 import Contact from "./pages/Contact/Contact";
 import OrderSuccess from "./pages/OrderSuccess/OrderSuccess";
 import AccessoryDetails from "./pages/AccessoryDetails/AccessoryDetails";
+import Footer from "./components/Footer/Footer";
 
 
 const App = () => {
@@ -31,6 +32,7 @@ const App = () => {
         <Route path="/order-success" element={<OrderSuccess />}/>
         <Route path="/contact" element={<Contact />}/>
       </Routes>
+      <Footer />
     </CartProvider>
   );
 };

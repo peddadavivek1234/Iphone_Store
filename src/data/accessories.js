@@ -1,4 +1,3 @@
-
 const accessories = [
   {
     id: "acc-1",
